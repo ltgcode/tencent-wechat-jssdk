@@ -1,13 +1,13 @@
 {
-	"name": "tencent-wechat-jssdk",
-	"version": "1.0.0-202002261550",
-	"description": "微信 JS-SDK",
+	"name": "ltg-wxsdk",
+	"version": "1.0.0",
+	"description": "Wechat TypeScript-SDK",
 	"main": "index.js",
 	"types": "index.d.ts",
 	"scripts": {},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/choukin/tencent-wechat-jssdk.git"
+		"url": "git+https://github.com/ltgcode/ltg-wxsdk.git"
 	},
 	"keywords": [
 		"wx",
@@ -18,10 +18,10 @@
 		"sdk",
 		"typescript"
 	],
-	"author": "taoqf",
+	"author": "ltg",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/choukin/tencent-wechat-jssdk/issues"
+		"url": "https://github.com/ltgcode/ltg-wxsdk/issues"
 	},
-	"homepage": "https://github.com/choukin/tencent-wechat-jssdk#readme"
+	"homepage": "https://github.com/ltgcode/ltg-wxsdk#readme"
 }

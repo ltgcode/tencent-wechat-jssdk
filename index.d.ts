@@ -67,7 +67,8 @@ declare namespace jWeixin {
 		'openProductSpecificView' |
 		'addCard' |
 		'chooseCard' |
-		'openCard';
+		'openCard' |
+		'miniProgram';
 
 	// 所有JS接口列表
 	type jsApiList = ApiMethod[];
@@ -591,6 +592,50 @@ declare namespace jWeixin {
 		invoke(type: string, param: any, callback: (msg: { err_msg: string; }) => void): void;
 	}
 }
+
+
+/**
+ * 添加小程序接口
+ */
+declare namespace jWeixin {
+	
+
+	
+	declare namespace miniProgram {
+
+		interface INavigateToArg {
+			url:string;
+		}
+
+		function navigateTo(options:InavigateToArg):void;
+		function redirectTo(options:INavigateToArg):void;
+
+		interface NavigateBackOption {
+			/** 接口调用结束的回调函数（调用成功、失败都会执行） */
+			complete?: Function
+			/** 返回的页面数，如果 delta 大于现有页面数，则返回到首页。 */
+			delta?: number
+			/** 接口调用失败的回调函数 */
+			fail?: Function
+			/** 接口调用成功的回调函数 */
+			success?: Function
+		}
+
+		function navigateBack(options:NavigateBackOption):void;
+
+		interface EnvResult {
+			miniprogram:boolean;
+		}
+		function getEnv(n:Function):EnvResult;
+
+		interface PostMessageArg{
+			data?:any;
+		}
+
+		function postMessage(options:PostMessageArg):void;
+	}
+}
+
 
 // declare var wx = jWeixin;
 

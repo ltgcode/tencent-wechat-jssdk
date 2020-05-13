@@ -1,4 +1,12 @@
-# tencent-wx-jssdk
+# 项目说明
+源码来源：tencent-wx-jssdk
+作者：taoqf
+
+URL：[tencent-wx-jssdk](https://www.npmjs.com/package/tencent-wx-jssdk)
+
+本项目添加了自己需要用的小程序的接口的描述，因不熟悉TS，不确定是否有BUG。
+
+# 微信SDK地址
 Weixin [JS-SDK](https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421141115)
 
 ## SDK Version
@@ -8,7 +16,7 @@ Weixin [JS-SDK](https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp14211
 ## Install
 
 ```sh
-npm install tencent-wechat-jssdk --save
+npm install ltg-wxsdk --save
 ```
 
 ## How to Use
@@ -17,7 +25,7 @@ npm install tencent-wechat-jssdk --save
 
 ```ts
 // sometime you want import this module, eg. use this with webpack
-import { scanQRCode } from 'tencent-wx-jssdk';
+import { scanQRCode } from 'ltg-wxsdk';
 
 scanQRCode({
 	needResult: 0,
@@ -34,7 +42,7 @@ or, you could add this module in your tsconfig.json
 {
 	"compilerOptions": {
 		"types": [
-			"tencent-wx-jssdk"
+			"ltg-wxsdk"
 		]
 	}
 }
@@ -62,7 +70,7 @@ WeixinJSBridge.invoke("getBrandWCPayRequest", {}, (res) => {
 **You will need this only if you would like get your project packed.**
 
 ```js
-const wx = require('tencent-wx-jssdk');
+const wx = require('ltg-wxsdk');
 wx.scanQRCode({
 	needResult: 0,
 	scanType: ['qrCode'],
