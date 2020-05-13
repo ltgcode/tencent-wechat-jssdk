@@ -1,13 +1,13 @@
 {
 	"name": "ltg-wxsdk",
-	"version": "1.0.0",
+	"version": "1.0.2-beta",
 	"description": "Wechat TypeScript-SDK",
 	"main": "index.js",
 	"types": "index.d.ts",
 	"scripts": {},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/ltgcode/ltg-wxsdk.git"
+		"url": "git+https://github.com/ltgcode/tencent-wx-jssdk.git"
 	},
 	"keywords": [
 		"wx",
@@ -21,7 +21,7 @@
 	"author": "ltg",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/ltgcode/ltg-wxsdk/issues"
+		"url": "https://github.com/ltgcode/tencent-wx-jssdk/issues"
 	},
-	"homepage": "https://github.com/ltgcode/ltg-wxsdk#readme"
+	"homepage": "https://github.com/ltgcode/tencent-wx-jssdk#readme"
 }
