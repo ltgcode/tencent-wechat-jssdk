@@ -1,6 +1,6 @@
 {
 	"name": "ltg-wxsdk",
-	"version": "1.0.2-beta",
+	"version": "1.0.4-beta",
 	"description": "Wechat TypeScript-SDK",
 	"main": "index.js",
 	"types": "index.d.ts",
