@@ -47,6 +47,7 @@ declare namespace jWeixin {
 		'onVoicePlayEnd' |
 		'uploadVoice' |
 		'downloadVoice' |
+		'getLocalImgData' |
 		'chooseImage' |
 		'previewImage' |
 		'uploadImage' |
@@ -230,6 +231,16 @@ declare namespace jWeixin {
 		current: string; // 当前显示图片的http链接
 		urls: string[]; // 需要预览的图片http链接列表
 	}
+
+	/**
+	 * 获取本地图片文件内容
+	 */
+	interface ILocalImageDataParams extends BaseParams {
+		localId: string; 
+	}
+
+	function getLocalImgData(params:ILocalImageDataParams):void;
+
 	/**
 	 * 预览图片接口
 	 */
